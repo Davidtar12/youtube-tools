@@ -1,0 +1,27 @@
+Pillow>=9.0.0
+pytest>=7.0.0
+
+tqdm>=4.0.0  # for progress bar (optional, script falls back if not installed)
+
+# Trading / market data optional dependencies:
+MetaTrader5>=5.0.45  # for mt5_us_stock_symbols.py discovery (optional; fallback works if absent)
+
+finnhub-python>=2.4.20  # required for tick-based backtester and orchestrator
+
+# Optional feature dependencies (install if you need full reporting & geocoding):
+# pandas>=2.0.0     # duplicates.csv (tabular) and potential future analytics
+# jinja2>=3.1.0     # HTML summary (if missing, summary.html skipped)
+# geopy>=2.4.0      # reverse geocoding (if missing, location names skipped)
+# folium>=0.15.0    # interactive map
+# imagehash>=4.3.1  # high-quality perceptual hashes (fallback hash used otherwise)
+# pillow-heif       # HEIF/HEIC support (enable with PHOTO_ORG_ENABLE_HEIF=1)
+# rawpy             # RAW preliminary support (enable with PHOTO_ORG_ENABLE_RAW=1)
+
+# Computer vision (optional, enable as needed)
+# ultralytics>=8.0.0         # YOLOv8 object detection (dogs/cats/person, etc.)
+# onnxruntime>=1.17.0        # For DogFaceNet (ONNX) inference
+# onnxruntime-gpu>=1.17.0    # GPU acceleration for ONNX (optional, if CUDA available)
+# fastai>=2.7.0              # Optional custom dog classifier fallback
+# deepface>=0.0.93           # Optional human face embeddings (ArcFace) - fallback only
+# insightface>=0.7.3         # RECOMMENDED: SCRFD-10G detector + ArcFace recognition (faster & more accurate)
+# opencv-python>=4.8.0       # Required for insightface and general image processing
