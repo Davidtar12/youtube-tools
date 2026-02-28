@@ -1,0 +1,51 @@
+# Secrets
+.env
+.env.*
+*.env
+!.env.example
+client_secret_*.json
+token.json
+*.key
+*.pem
+schwab-*.txt
+alpkey.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+Lib/
+Scripts/
+
+# Data and outputs
+*.csv
+*.log
+*.xlsx
+*.pkl
+*.mp3
+*.mp4
+*.pdf
+
+# Cache
+cache/
+cache_data/
+cached-transcripts/
+*.backup
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
